@@ -2,4 +2,4 @@ project: hexd
 target: hexd
 
 cmds:
-  - cmd: /repo/hexd @@
+  - cmd: /install/usr/local/bin/hexd @@
