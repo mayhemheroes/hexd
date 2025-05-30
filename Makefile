@@ -13,5 +13,6 @@ clean:
 
 .PHONY: install
 install: hexd
-	install -D hexd $(DESTDIR)$(BINDIR)/hexd
-	install -D hexd.1 $(DESTDIR)$(MANDIR)/man1/hexd.1
+	mkdir -p $(DESTDIR)$(BINDIR) $(DESTDIR)$(MANDIR)/man1
+	install hexd $(DESTDIR)$(BINDIR)/hexd
+	install hexd.1 $(DESTDIR)$(MANDIR)/man1/hexd.1
